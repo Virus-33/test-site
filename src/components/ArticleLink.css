@@ -1,0 +1,136 @@
+.article-link {
+    font-size: 0.8rem;
+    width: 11rem;
+    height: 8rem;
+    margin: 0 1rem 1rem 1rem;
+    box-shadow: 0 0 4em 0.4rem #1e1e1e inset;
+    text-shadow: 0 0 10px #131313;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #e6e6e6;
+    vertical-align: top;
+}
+
+.article-link:hover {
+    transform: scale(1.05);
+    transition: 100ms;
+}
+
+.article-link:focus {
+    transform: scale(0.978);
+    transition: 100ms;
+}
+
+.article-link-big {
+    width: 87%;
+    height: 9.5rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px 10px #1e1e1e inset;
+    text-shadow: 0 0 10px #131313;
+    opacity: 0.87;
+}
+
+.article-link-big:hover {
+    transform: scale(1.0115);
+    transition: 100ms;
+}
+
+.article-link-big:focus {
+    transform: scale(0.987);
+    transition: 100ms;
+}
+
+.article-link-big p,
+.article-link-big h2 {
+    opacity: 150%;
+}
+
+#rules {
+    background: url("../assets/compass-tmp.jpg") center/100% no-repeat;
+}
+
+#rules:hover {
+    transform: scale(1.0115);
+    transition: 100ms;
+}
+
+#rules:focus {
+    transform: scale(0.987);
+    transition: 100ms;
+}
+
+
+#shops {
+    background: url("../assets/stall_image.jpg") center/110% no-repeat;
+}
+
+#shops.article-link-big {
+    background: url("../assets/stall_image.jpg") center/100% no-repeat;
+}
+
+#chat-rules {
+    background: url("../assets/ping.webp") center/110% no-repeat;
+}
+#chat-rules.article-link-big {
+    background: url("../assets/ping.webp") center/60% no-repeat;
+}
+
+#items {
+    background: url("../assets/item.jpg") center/150% no-repeat;
+}
+#items.article-link-big {
+    background: url("../assets/item.jpg") center/99% no-repeat;
+}
+
+#transmutation {
+    background: url("../assets/circle.jpg") center/150% no-repeat;
+}
+#transmutation.article-link-big {
+    background: url("../assets/circle.jpg") center/100% no-repeat;
+}
+
+#brewing {
+    background: url("../assets/alchemy.jpg") center/100% no-repeat;
+}
+
+#events {
+    background: url("../assets/raids.jpg") center/120% no-repeat;
+}
+#events.article-link-big {
+    background: url("../assets/raids.jpg") center/100% no-repeat;
+}
+
+#bazaar {
+    background: url("../assets/bazaar.jpg") center/145% no-repeat;
+}
+#bazaar.article-link-big {
+    background: url("../assets/bazaar.jpg") center/100% no-repeat;
+}
+
+#ranks {
+    background: url("../assets/board.jpg") center/115% no-repeat;
+}
+#ranks.article-link-big {
+    background: url("../assets/board.jpg") center/99% no-repeat;
+}
+
+#classes {
+    background: url("../assets/classes.webp") center/120% no-repeat;
+}
+#classes.article-link-big {
+    background: url("../assets/classes.webp") center/100% no-repeat;
+}
+
+#glossary {
+    background: url("../assets/book.jpg") center/130% no-repeat;
+}
+#glossary.article-link-big {
+    background: url("../assets/book.jpg") center/100% no-repeat;
+}
+
+#overall {
+    background: url("../assets/wizard.png") center/100% no-repeat;
+}
+#overall.article-link-big {
+    background: url("../assets/wizard.png") center/99% no-repeat;
+}
