@@ -14,6 +14,7 @@ import Brewing from '../content/docs/rules/brewing.md'
 import Transmutation from '../content/docs/rules/transmutation.mdx'
 import {useParams} from "react-router-dom";
 import NotFoundPage from "../NotFoundPage.jsx";
+import {useDeviceDetect} from "../global_vars.jsx";
 
 function Article() {
     const {rule} = useParams();
@@ -32,6 +33,7 @@ function Article() {
     ]
 
     const content = array.find((item) => item.link === rule);
+    const con_id = useDeviceDetect().isMobile ? 'container-mobile' : 'container';
 
     return (
         <>
@@ -39,7 +41,7 @@ function Article() {
                 <NotFoundPage/> :
                 <>
                     <Topbar/>
-                    <div id={'container'}>
+                    <div id={con_id}>
                         <div className={'article'}>
                             <MDXProvider>
                                 {content.component}

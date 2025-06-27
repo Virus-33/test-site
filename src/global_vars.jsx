@@ -1,3 +1,5 @@
+import {useEffect, useState} from "react";
+
 export const basic_rules = {
     nav: {
         title: "Навигатор по правилам",
@@ -73,4 +75,22 @@ export const basic_rules = {
 
 export const article_big = 'article-link-big';
 export const article_link = 'article-link';
+export const article_link_mobile = 'article-link-mobile';
+export const article_big_mobile = 'article-big-mobile';
+
+export const useDeviceDetect = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 770);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 770);
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const art = isMobile ? article_link_mobile : article_link;
+    const art_big = isMobile ? article_big_mobile : article_big;
+
+    return {isMobile, art, art_big};
+};
 

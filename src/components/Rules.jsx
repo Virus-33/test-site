@@ -1,4 +1,4 @@
-import {basic_rules} from '../global_vars.jsx';
+import {basic_rules, useDeviceDetect} from '../global_vars.jsx';
 import {article_big} from "../global_vars.jsx";
 import Topbar from "./Topbar.jsx";
 import ArticleLink from "./ArticleLink.jsx";
@@ -8,7 +8,7 @@ function Rules() {
     return (
         <>
             <Topbar/>
-            <div id={'container'}>
+            <div id={useDeviceDetect().isMobile ? 'container-mobile' : 'container'}>
                 <ArticleLink linkClass={article_big} data={basic_rules.start}/>
                 <ArticleLink linkClass={article_big} data={basic_rules.overall}/>
                 <ArticleLink linkClass={article_big} data={basic_rules.glossary}/>
