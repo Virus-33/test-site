@@ -1,17 +1,18 @@
 import './Article.css'
 import Topbar from "./Topbar.jsx";
 import {MDXProvider} from '@mdx-js/react'
-import Overall from '../content/docs/rules/mainrules.md'
-import Glossary from '../content/docs/rules/glossary.md'
-import Classes from '../content/docs/rules/classes.md'
-import Ranks from '../content/docs/rules/ranks.md'
+import Overall from '../content/docs/rules/mainrules.mdx'
+import Glossary from '../content/docs/rules/glossary.mdx'
+import Classes from '../content/docs/rules/classes.mdx'
+import Ranks from '../content/docs/rules/ranks.mdx'
 import ChatRules from '../content/docs/rules/chat-rules.mdx'
-import Shops from '../content/docs/rules/shops.md'
-import Items from '../content/docs/rules/items.md'
-import Bazaar from '../content/docs/rules/bazaar.md'
-import Events from '../content/docs/rules/events.md'
-import Brewing from '../content/docs/rules/brewing.md'
+import Shops from '../content/docs/rules/shops.mdx'
+import Items from '../content/docs/rules/items.mdx'
+import Bazaar from '../content/docs/rules/bazaar.mdx'
+import Events from '../content/docs/rules/events.mdx'
+import Brewing from '../content/docs/rules/brewing.mdx'
 import Transmutation from '../content/docs/rules/transmutation.mdx'
+import Guidebook from '../content/docs/rules/guidebook.mdx'
 import {useParams} from "react-router-dom";
 import NotFoundPage from "../NotFoundPage.jsx";
 import {useDeviceDetect} from "../global_vars.jsx";
@@ -29,7 +30,8 @@ function Article() {
         {link: 'bazaar', component: <Bazaar/>},
         {link: 'events', component: <Events/>},
         {link: 'brewing', component: <Brewing/>},
-        {link: 'transmutation', component: <Transmutation/>}
+        {link: 'transmutation', component: <Transmutation/>},
+        {link: 'start', component: <Guidebook/>}
     ]
 
     const content = array.find((item) => item.link === rule);

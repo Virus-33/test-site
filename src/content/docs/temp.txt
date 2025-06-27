@@ -1,0 +1,38 @@
+Вот эта была карусель, потом придумаем как наебенить потом
+
+<section id="image-carousel" class="splide" aria-label="Описание постов. Примеры и порядок хода">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="/images/1.webp">
+        <div>
+        <center>
+        <em>
+          Примеры постов. Первый пост за рейдоделом
+          </em>
+          </center>
+          </div>
+			</li>
+			<li class="splide__slide">
+				<img src="/images/2.webp"/>
+        <div>
+        <center>
+        <em>
+          Игрок отписывает своё действие, задавая вопрос NPC
+          </em>
+          </center>
+          </div>
+			</li>
+			<li class="splide__slide">
+				<img src="/images/3.webp"/>
+        <div>
+        <center>
+        <em>
+          Рейдодел отвечает на вопрос от имени NPC и даёт подсказку для следующих действий
+          </em>
+          </center>
+          </div>
+			</li>
+		</ul>
+  </div>
+</section>
