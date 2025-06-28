@@ -16,6 +16,7 @@ import Guidebook from '../content/docs/rules/guidebook.mdx'
 import {useParams} from "react-router-dom";
 import NotFoundPage from "../NotFoundPage.jsx";
 import {useDeviceDetect} from "../global_vars.jsx";
+import {useEffect} from "react";
 
 function Article() {
     const {rule} = useParams();
@@ -37,6 +38,10 @@ function Article() {
     const content = array.find((item) => item.link === rule);
     const con_id = useDeviceDetect().isMobile ? 'container-mobile' : 'container';
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <>
             {content == undefined ?
@@ -53,6 +58,7 @@ function Article() {
             }
         </>
     )
+
 }
 
 export default Article;
