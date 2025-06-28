@@ -54,11 +54,11 @@ function Article() {
                                 {content.component}
                             </MDXProvider>
                         </div>
-                    </div></>
+                    </div>
+                </>
             }
         </>
     )
-
 }
 
 export default Article;
