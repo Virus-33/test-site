@@ -19,6 +19,14 @@
     background-color: #2b2b2b;
 }
 
+.article details {
+    background-color: #2c292e;
+    border-radius: 5px;
+    width: 80%;
+    color: #cccccc;
+    padding: 0.5rem 0 0.01rem 1rem;
+}
+
 .td-quote {
     text-align: center;
     position: relative;
