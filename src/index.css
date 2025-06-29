@@ -40,20 +40,6 @@
     min-height: 100%;
 }
 
-.td-quote {
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    padding: 1rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    text-align: center;
-}
-
-blockquote:not(.td-quote) {
-    border-left: 3px solid #ccc;
-    padding-left: 1rem;
-}
-
 hr {
     max-width: 90%;
 }
@@ -72,7 +58,7 @@ body {
     min-height: 100vh;
 }
 
-h1 {
+h1:not(.article h1) {
     font-size: 3.2em;
     line-height: 1.1;
 }
