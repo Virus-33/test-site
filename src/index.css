@@ -40,6 +40,12 @@
     min-height: 100%;
 }
 
+#container-mobile img:not(.dont) {
+    display: flex;
+    justify-self: center;
+    max-width: 20rem;
+}
+
 hr {
     max-width: 90%;
     height: 1px;

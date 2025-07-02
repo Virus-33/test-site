@@ -67,9 +67,11 @@
     content: '';
     position: absolute;
     display: block;
-    width: 40%;
+    width: 34%;
     height: 1px;
-    margin: -0.5rem 0 0 14rem;
+    /*margin: -0.5rem 0 0 34%;*/
+    top: -0.5rem;
+    left:34%
 }
 
 .td-quote::after {
@@ -77,9 +79,12 @@
     content: '';
     position: absolute;
     display: block;
-    width: 40%;
+    width: 34%;
     height: 1px;
-    margin: 0.5rem 0 0 14rem;
+    margin: 0.5rem 0 0 34%;
 }
 
+p:has(.pic_desc) {
+    display: grid;
+}
 
