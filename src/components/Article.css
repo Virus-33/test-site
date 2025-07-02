@@ -1,10 +1,29 @@
+.article a:not(.article details a) {
+    color: #64851b;
+    text-decoration: underline;
+}
+
+.article blockquote:not(.td-quote) {
+    border-left: 3px solid #ccc;
+    padding-left: 1rem;
+    background-color: #2b2b2b;
+}
+
+#container-mobile ul {
+    padding-left: 1rem;
+}
+
+#container-mobile blockquote:not(.td-quote) {
+    margin-left: 0.5rem;
+    width: 90%;
+}
 
 .article {
     text-align: left;
     margin: 1.4rem;
 }
 
-.article p {
+.article p:not(.pic_desc) {
     font-size: 1.1rem;
     margin-top: 2rem;
 }
@@ -13,10 +32,28 @@
     font-size: 2.5rem;
 }
 
-.article blockquote:not(.td-quote) {
-    border-left: 3px solid #ccc;
-    padding-left: 1rem;
-    background-color: #2b2b2b;
+.article table {
+    border-spacing: 1rem;
+}
+
+.article details {
+    background-color: #2c292e;
+    border-radius: 5px;
+    width: 80%;
+    color: #cccccc;
+    padding: 0.5rem 0 0.01rem 1rem;
+}
+
+.article img:not(.dont) {
+    display: flex;
+    justify-self: center;
+    max-width: 45rem;
+}
+
+.pic_desc {
+    display: flex;
+    justify-self: center;
+    font-size: 1rem;
 }
 
 .td-quote {

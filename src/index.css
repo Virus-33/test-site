@@ -6,8 +6,8 @@
     margin: 0;
 
     color-scheme: light dark;
-    color: #FDFEFF;
-    background-color: #242424;
+    color: #cccccc;
+    background-color: #1d1d1d;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -34,7 +34,7 @@
 
 #container-mobile {
     max-width: 98%;
-    margin: 7% 1% 0 1%;
+    margin: 7% 2% 0 2%;
     border-radius: 20px;
     border: 1px solid #363a37;
     min-height: 100%;
@@ -42,6 +42,10 @@
 
 hr {
     max-width: 90%;
+    height: 1px;
+    border: 0 solid;
+    background: #7d7d7d;
+    border-radius: 10px;
 }
 
 a {
@@ -73,4 +77,13 @@ button {
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
+}
+
+code {
+    background-color: #231b2a;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    border: 0 solid transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-family: system-ui Cascadia Mono;
 }
