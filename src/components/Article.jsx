@@ -44,7 +44,7 @@ function Article() {
 
     return (
         <>
-            {content == undefined ?
+            {content === undefined ?
                 <NotFoundPage/> :
                 <>
                     <Topbar/>
