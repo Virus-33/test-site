@@ -7,7 +7,7 @@
 
     color-scheme: light dark;
     color: #cccccc;
-    background-color: #242424;
+    background-color: #1d1d1d;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -77,4 +77,13 @@ button {
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
+}
+
+code {
+    background-color: #231b2a;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    border: 0 solid transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-family: system-ui Cascadia Mono;
 }

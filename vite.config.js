@@ -14,7 +14,8 @@ export default defineConfig({
                 id: 'articleToc'
             },
             containerTagName: '',
-            minDepth: 2
+            minDepth: 2,
+            hasNav: false
         }
         ]],
         rehypePlugins: [rehypeSlug]

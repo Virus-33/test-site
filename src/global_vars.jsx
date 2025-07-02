@@ -73,10 +73,17 @@ export const basic_rules = {
     }
 };
 
-export const article_big = 'article-link-big';
-export const article_link = 'article-link';
-export const article_link_mobile = 'article-link-mobile';
-export const article_big_mobile = 'article-big-mobile';
+const article_big = 'article-link-big';
+const article_link = 'article-link';
+const article_link_mobile = 'article-link-mobile';
+const article_big_mobile = 'article-big-mobile';
+
+const _arr_left = 'arr-left';
+const _arr_right = 'arr-right';
+const _arr_left_mobile = 'arr-l-m';
+const _arr_right_mobile = 'arr-r-m';
+const _car_container = 'car-container';
+const _car_container_mobile = 'car-container-mobile';
 
 export const useDeviceDetect = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 770);
@@ -90,7 +97,10 @@ export const useDeviceDetect = () => {
 
     const art = isMobile ? article_link_mobile : article_link;
     const art_big = isMobile ? article_big_mobile : article_big;
+    const arr_left = isMobile ? _arr_left_mobile : _arr_left;
+    const arr_right = isMobile ? _arr_right_mobile : _arr_right;
+    const car_container = isMobile ? _car_container_mobile : _car_container;
 
-    return {isMobile, art, art_big};
+    return {isMobile, art, art_big, arr_left, arr_right, car_container};
 };
 
