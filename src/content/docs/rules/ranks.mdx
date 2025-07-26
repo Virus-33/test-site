@@ -1,3 +1,11 @@
+import { rar_common,
+    rar_rare,
+    rar_vrare,
+    rar_epic,
+    rar_myth,
+    rar_leg } from '../../../global_vars.jsx';
+
+
 # Ранги персонажей
 
 <details>
@@ -68,17 +76,19 @@
 ![Табличка с ограничениями. Её зашакалило](/images/ranks.webp)
 <span className={'pic_desc'}>*Табличка с ограничениями. Её зашакалило*</span>
 
+<div className={'table-div'}>
 
 | **Редкость вещи**                                           | **ДД/Танк/Баффер/Хиллер** | **Универсал/Псайкер** | **Призыватель/Траппер** |
 |-------------------------------------------------------------|:-------------------------:|:---------------------:|:-----------------------:|
-| <span style={{color:'#8d5d67'}}>**Обычная**</span>          |             3             |           4           |            2            |
-| <span style={{color:'#097be4'}}>**Редкая**</span>           |             3             |           3           |            2            |
-| <span style={{color:'#303bab'}}>**Очень Редкая**</span>     |             3             |           3           |            2            |
-| <span style={{color:'#b200bc'}}>**Эпическая**</span>        |             2             |           2           |            2            |
-| <span style={{color:'#1de9b6'}}>**Мифическая**</span>       |             1             |           1           |            1            |
-| <span style={{color:'orange'}}>**Легендарная**</span>       |             1             |           1           |            1            |
+| <span style={{color:rar_common}}>**Обычная**</span>          |             3             |           4           |            2            |
+| <span style={{color:rar_rare}}>**Редкая**</span>           |             3             |           3           |            2            |
+| <span style={{color:rar_vrare}}>**Очень Редкая**</span>     |             3             |           3           |            2            |
+| <span style={{color:rar_epic}}>**Эпическая**</span>        |             2             |           2           |            2            |
+| <span style={{color:rar_myth}}>**Мифическая**</span>       |             1             |           1           |            1            |
+| <span style={{color:rar_leg}}>**Легендарная**</span>       |             1             |           1           |            1            |
 | <span style={{color:'#FFFFFF'}}>**Общее количество**</span> |             4             |           3           |            2            |
 
+</div>
 
 <span className={'pic_desc'}>*Ого, табличка на P-ранг. Тебе она пока не нужна*</span>
 
