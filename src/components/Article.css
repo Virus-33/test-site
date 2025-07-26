@@ -18,6 +18,22 @@
     width: 90%;
 }
 
+#container img:not(.dont) {
+    display: flex;
+    justify-self: center;
+    max-width: 45rem;
+}
+
+#container-mobile img:not(.dont) {
+    display: flex;
+    justify-self: center;
+    max-width: 22rem;
+}
+
+.table-div {
+    overflow: scroll;
+}
+
 .article {
     text-align: left;
     margin: 1.4rem;
@@ -42,12 +58,6 @@
     width: 80%;
     color: #cccccc;
     padding: 0.5rem 0 0.01rem 1rem;
-}
-
-.article img:not(.dont) {
-    display: flex;
-    justify-self: center;
-    max-width: 45rem;
 }
 
 .pic_desc {
