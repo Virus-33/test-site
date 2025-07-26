@@ -73,6 +73,14 @@ export const basic_rules = {
     }
 };
 
+export const rar_common = '#8d5d67';
+export const rar_rare = '#097be4';
+export const rar_vrare = '#303bab';
+export const rar_epic = '#b200bc';
+export const rar_myth = '#1de9b6';
+export const rar_leg = 'orange';
+export const rar_relic = '#695d74';
+
 const article_big = 'article-link-big';
 const article_link = 'article-link';
 const article_link_mobile = 'article-link-mobile';

@@ -10,7 +10,7 @@ import Shops from '../content/docs/rules/shops.mdx'
 import Items from '../content/docs/rules/items.mdx'
 import Bazaar from '../content/docs/rules/bazaar.mdx'
 import Events from '../content/docs/rules/events.mdx'
-import Brewing from '../content/docs/rules/brewing.mdx'
+import Brewing from '../content/docs/rules/brewery.mdx'
 import Transmutation from '../content/docs/rules/transmutation.mdx'
 import Guidebook from '../content/docs/rules/guidebook.mdx'
 import {useParams} from "react-router-dom";
