@@ -27,7 +27,7 @@
 #container-mobile img:not(.dont) {
     display: flex;
     justify-self: center;
-    max-width: 22rem;
+    max-width: 19rem;
 }
 
 .table-div {
