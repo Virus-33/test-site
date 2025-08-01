@@ -30,6 +30,7 @@
     border-radius: 20px;
     border: 1px solid #363a37;
     min-height: 100%;
+    scrollbar-width: none;
 }
 
 #container-mobile {
