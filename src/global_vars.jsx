@@ -86,6 +86,9 @@ const article_link = 'article-link';
 const article_link_mobile = 'article-link-mobile';
 const article_big_mobile = 'article-big-mobile';
 
+const about_desk = 'about';
+const about_mob = 'about-mobile';
+
 const _arr_left = 'arr-left';
 const _arr_right = 'arr-right';
 const _arr_left_mobile = 'arr-l-m';
@@ -108,7 +111,8 @@ export const useDeviceDetect = () => {
     const arr_left = isMobile ? _arr_left_mobile : _arr_left;
     const arr_right = isMobile ? _arr_right_mobile : _arr_right;
     const car_container = isMobile ? _car_container_mobile : _car_container;
+    const about = isMobile ? about_mob : about_desk;
 
-    return {isMobile, art, art_big, arr_left, arr_right, car_container};
+    return {isMobile, art, art_big, arr_left, arr_right, car_container, about};
 };
 
