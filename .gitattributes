@@ -1,1 +1,2 @@
 *.mdx !eol
+*.mdx -whitespace
