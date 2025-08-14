@@ -1,2 +1,1 @@
-*.mdx  -whitespace=trailing-space
 *.mdx !eol
