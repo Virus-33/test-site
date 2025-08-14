@@ -47,6 +47,28 @@
     max-width: 20rem;
 }
 
+.about {
+    margin:3% 0 0 28%;
+    max-width: 45%;
+    text-align: left;
+}
+
+.about a {
+    color: #64851b;
+    text-decoration: underline;
+}
+
+.about-mobile {
+    margin: 10% 2% 0 7%;
+    max-width: 98%;
+    text-align: left;
+}
+
+.about-mobile a {
+    color: #64851b;
+    text-decoration: underline;
+}
+
 hr {
     max-width: 90%;
     height: 1px;
