@@ -1,1 +1,3 @@
-*.mdx  -whitespace
+*.mdx !eol
+*.mdx whitespace=-trailing-space
+**/*.md text whitespace=-cr-at-eol,-trailing-space

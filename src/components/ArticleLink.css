@@ -205,6 +205,13 @@
     background: url("../assets/tea.webp") center/99% no-repeat;
 }
 
+#pvp {
+    background: url("../assets/swords.webp") center/160% no-repeat;
+}
+#pvp.article-link-big {
+    background: url("../assets/swords.webp") center/100% no-repeat;
+}
+
 .art-desc-mobile {
     display: none;
 }

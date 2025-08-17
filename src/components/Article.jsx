@@ -13,6 +13,7 @@ import Events from '../content/docs/rules/events.mdx'
 import Brewing from '../content/docs/rules/brewery.mdx'
 import Transmutation from '../content/docs/rules/transmutation.mdx'
 import Guidebook from '../content/docs/rules/guidebook.mdx'
+import PVP from '../content/docs/rules/honor.mdx'
 import {useParams} from "react-router-dom";
 import NotFoundPage from "../NotFoundPage.jsx";
 import {useDeviceDetect} from "../global_vars.jsx";
@@ -32,7 +33,8 @@ function Article() {
         {link: 'events', component: <Events/>},
         {link: 'brewing', component: <Brewing/>},
         {link: 'transmutation', component: <Transmutation/>},
-        {link: 'start', component: <Guidebook/>}
+        {link: 'start', component: <Guidebook/>},
+        {link:'pvp', component: <PVP/>}
     ]
 
     const content = array.find((item) => item.link === rule);
