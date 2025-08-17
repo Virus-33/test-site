@@ -66,6 +66,11 @@ export const basic_rules = {
         desc: "Ваши первые шаги",
         route: "start"
     },
+    pvp: {
+        title: "Кодекс чести",
+        desc: "Особые правила для ПВП",
+        route: "pvp"
+    },
     placeholder: {
         title: "",
         desc: "",

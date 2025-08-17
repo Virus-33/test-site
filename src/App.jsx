@@ -14,6 +14,7 @@ function App() {
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.overall}/>
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.glossary}/>
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.classes}/>
+            <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.pvp}/>
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.ranks}/>
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.bazaar}/>
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.events}/>
