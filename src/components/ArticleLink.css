@@ -31,6 +31,7 @@
     width: 87%;
     height: 9.5rem;
     margin: 1rem;
+    color: #e6e6e6;
     box-shadow: 0 0 10px 10px #1e1e1e inset;
     text-shadow: 0 0 10px #131313;
 }
@@ -80,6 +81,7 @@
     width: 87%;
     height: 9.5rem;
     margin: 1rem;
+    color: #e6e6e6;
     box-shadow: 0 0 4em 0.4rem #1e1e1e inset;
     text-shadow: 0 0 10px #131313;
 }
