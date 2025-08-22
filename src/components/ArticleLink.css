@@ -33,7 +33,6 @@
     margin: 1rem;
     box-shadow: 0 0 10px 10px #1e1e1e inset;
     text-shadow: 0 0 10px #131313;
-    opacity: 0.87;
 }
 
 .article-link-big:hover {
@@ -44,11 +43,6 @@
 .article-link-big:focus {
     transform: scale(0.987);
     transition: 100ms;
-}
-
-.article-link-big p,
-.article-link-big h2 {
-    opacity: 150%;
 }
         /*----*/
 
@@ -88,7 +82,6 @@
     margin: 1rem;
     box-shadow: 0 0 4em 0.4rem #1e1e1e inset;
     text-shadow: 0 0 10px #131313;
-    opacity: 0.87;
 }
 
 .article-big-mobile:hover {
@@ -101,10 +94,6 @@
     transition: 100ms;
 }
 
-.article-big-mobile p,
-.article-big-mobile h2 {
-    opacity: 150%;
-}
 /*----*/
 
 /*--------*/
