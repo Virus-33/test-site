@@ -31,7 +31,15 @@
 }
 
 .table-div {
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.table-container {
+    width: 100%;
+    background-color: #292929;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .article {
@@ -52,7 +60,7 @@
     border-spacing: 1rem;
 }
 
-.article details {
+.article details:not(.table-container) {
     background-color: #2c292e;
     border-radius: 5px;
     width: 80%;
