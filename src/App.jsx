@@ -5,7 +5,12 @@ import {basic_rules, useDeviceDetect} from "./global_vars.jsx";
 
 function App() {
 
+    document.title = 'Т&Б - Документация';
+    document.getElementById('desc').content = 'Сборник всех правила проекта Т&Б: классов персонажей, ' +
+        'общих правил игры, общения в проекте, вводного курса для новеньких, игрового глоссария, внутриигрового рынка';
+    
   return (
+      
     <>
         <Topbar/>
         <div id={useDeviceDetect().isMobile ? 'container-mobile' : 'container'}>
