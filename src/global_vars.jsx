@@ -80,7 +80,7 @@ export const basic_rules = {
 
 export const rar_common = '#8d5d67';
 export const rar_rare = '#097be4';
-export const rar_vrare = '#303bab';
+export const rar_vrare = '#b3dc38';
 export const rar_epic = '#b200bc';
 export const rar_myth = '#1de9b6';
 export const rar_leg = 'orange';
