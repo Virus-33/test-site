@@ -71,6 +71,11 @@ export const basic_rules = {
         desc: "Особые правила для ПВП",
         route: "pvp"
     },
+    resources: {
+        title: "Материалы",
+        desc: "Узнайте, какие ресурсы есть в проекте",
+        route: "resources"
+    },
     placeholder: {
         title: "",
         desc: "",

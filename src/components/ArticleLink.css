@@ -203,6 +203,13 @@
     background: url("../assets/swords.webp") center/100% no-repeat;
 }
 
+#resources {
+    background: center/105% no-repeat url("https://sun9-49.userapi.com/s/v1/ig2/XSVpLN2sYtZ7aEU13b7CSt3Js9wl_zq9dP314dcjU0lhlaOeGvPlmdEQ4HL5O2kkpFFF44mD_oE4UHS2Lc6bXgIb.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,736x736&from=bu&cs=736x0");
+}
+#resources.article-link-big {
+    background: center 50% no-repeat url("https://sun9-49.userapi.com/s/v1/ig2/XSVpLN2sYtZ7aEU13b7CSt3Js9wl_zq9dP314dcjU0lhlaOeGvPlmdEQ4HL5O2kkpFFF44mD_oE4UHS2Lc6bXgIb.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,736x736&from=bu&cs=736x0");
+}
+
 .art-desc-mobile {
     display: none;
 }

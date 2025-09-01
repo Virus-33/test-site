@@ -14,6 +14,7 @@ import Brewing from '../content/docs/rules/brewery.mdx'
 import Transmutation from '../content/docs/rules/transmutation.mdx'
 import Guidebook from '../content/docs/rules/guidebook.mdx'
 import PVP from '../content/docs/rules/honor.mdx'
+import Resources from '../content/docs/rules/resources.mdx'
 import {useParams} from "react-router-dom";
 import NotFoundPage from "../NotFoundPage.jsx";
 import {useDeviceDetect} from "../global_vars.jsx";
@@ -24,10 +25,11 @@ function Article() {
     const array = [
         {link: 'overall', component: <Overall/>, title: 'Т&Б - Правила игры', desc: 'Общие правила проекта, касающиеся эффектов, ловушек, и боёв'},
         {link: 'glossary', component: <Glossary/>, title: 'Глоссарий', desc: 'Сборник внутриигровых определний и понятий проекта Т&Б'},
+        {link: 'resources', component: <Resources/>, title: 'Ресурсы', desc: 'Внутриигровые ресурсы проекта Т&Б'},
         {link: 'classes', component: <Classes/>, title: 'Т&Б - Классы персонажей', desc: 'Классы персонажей проекта Т&Б, их характеристики, возможности и ограничения'},
         {link: 'ranks', component: <Ranks/>, title: 'Ранги персонажей', desc: 'Ранги персонажей в проекте Т&Б, сколько их, за что можно получить и что они определяют'},
         {link: 'chat-rules', component: <ChatRules/>, title: 'Правила общения', desc: 'Правила общения в проекте Т&Б, какие вещи надо говорить и за какие можно получить наказание, и какое наказание за какое нарушение'},
-        {link: 'shops', component: <Shops/>, title: 'Магазины и ресурсы', desc: 'Правила для магазинов в проекте Т&Б - как создать, что можно продавать, сколько игровой валюты можно за это получить'},
+        {link: 'shops', component: <Shops/>, title: 'Магазины', desc: 'Правила для магазинов в проекте Т&Б - как создать, что можно продавать, сколько игровой валюты можно за это получить'},
         {link: 'items', component: <Items/>, title: "Правила для предметов", desc: 'Правила для предметов в проекте Т&Б, сколько характеристик дают, какие редкости и какая между ними разница'},
         {link: 'bazaar', component: <Bazaar/>, title: "Т&Б - Рынок", desc: 'Правила для рынка Т&Б, что можно продавать NPC и по каким ценам, как выкупить проданное обратно'},
         {link: 'events', component: <Events/>, title: "Рейды и данжи", desc: 'Руководство по событиям в Т&Б, что такое рейд и данж и как они отличаются, какие у них есть теги и что они значат'},
