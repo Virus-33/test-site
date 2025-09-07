@@ -76,6 +76,11 @@ export const basic_rules = {
         desc: "Узнайте, какие ресурсы есть в проекте",
         route: "resources"
     },
+    characters: {
+        title: "О персонажах",
+        desc: "Сборник мелких советов касательно персонажей",
+        route: "characters"
+    },
     placeholder: {
         title: "",
         desc: "",

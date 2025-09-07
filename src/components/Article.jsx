@@ -15,6 +15,7 @@ import Transmutation from '../content/docs/rules/transmutation.mdx'
 import Guidebook from '../content/docs/rules/guidebook.mdx'
 import PVP from '../content/docs/rules/honor.mdx'
 import Resources from '../content/docs/rules/resources.mdx'
+import Characters from '../content/docs/rules/characters.mdx'
 import {useParams} from "react-router-dom";
 import NotFoundPage from "../NotFoundPage.jsx";
 import {useDeviceDetect} from "../global_vars.jsx";
@@ -36,7 +37,9 @@ function Article() {
         {link: 'brewing', component: <Brewing/>, title: "Т&Б - Зельеварение", desc: 'Руководство к зельеварению проекта Т&Б, как варить зелья и из чего, что можно таким образом получить'},
         {link: 'transmutation', component: <Transmutation/>, title: "Т&Б - Трансмутация", desc: 'Руководство к трансмутации в проекте Т&Б, как можно усилить свои предметы и за счёт чего'},
         {link: 'start', component: <Guidebook/>, title: "Вводный курс по проекту", desc: 'Руководство новичка для вливания в Т&Б, как обстоят вопросы с персонажами, событиями, алхимией, отыгрышем и прочим'},
-        {link:'pvp', component: <PVP/>, title: "Т&Б - Кодекс чести", desc: 'Правила для пвп в проекте Т&Б, изменения касающиеся длительности эффектов и условия получения наград в сражениях против других игроков'}
+        {link:'pvp', component: <PVP/>, title: "Т&Б - Кодекс чести", desc: 'Правила для пвп в проекте Т&Б, изменения касающиеся длительности эффектов и условия получения наград в сражениях против других игроков'},
+        {link: 'characters', component: <Characters/>, title: 'О персонажах', desc: 'Информация о персонажах в проекте Т&Б и рекомендации к ним'},
+        
     ]
 
     const content = array.find((item) => item.link === rule);
@@ -51,7 +54,7 @@ function Article() {
     
     return (
         <>
-            {content === undefined ?
+            {content == undefined ?
                 <NotFoundPage/> :
                 <>
                     <Topbar/>

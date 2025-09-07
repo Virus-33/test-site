@@ -29,6 +29,7 @@ function App() {
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.chat}/>
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.shops}/>
             <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.resources}/>
+            <ArticleLink linkClass={useDeviceDetect().art} data={basic_rules.characters}/>
         </div>
     </>
   )
