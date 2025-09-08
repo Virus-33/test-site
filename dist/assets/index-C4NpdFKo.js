@@ -407,7 +407,9 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
 `,n.jsx(e.strong,{children:"Имка"})," — ака ",n.jsx(e.strong,{children:"Иммортал (Неуязвимость)"}),n.jsx(e.br,{}),`
 `,n.jsx(e.strong,{children:"Инвиз"})," — так называют ",n.jsx(e.strong,{children:"Невидимость"}),n.jsx(e.br,{}),`
 `,n.jsx(e.strong,{children:"Лич"})," — Лич",n.jsx(e.br,{}),`
-`,n.jsx(e.strong,{children:"Арбуз/абуз"}),' — применение "дыры" в правилах для любых целей. Карается']}),`
+`,n.jsx(e.strong,{children:"Арбуз/абуз"}),' — применение "дыры" в правилах для любых целей. Карается',n.jsx(e.br,{}),`
+`,n.jsx(e.strong,{children:"Нерегнутый ранг"})," — ранг персонажа, полученный путём проведения рейда, и который пока ещё не действует",n.jsx(e.br,{}),`
+`,n.jsx(e.strong,{children:"Регнуть ранг"}),' — явление, когда игрок заходит на рейд персонажем с недействительным рангом для его "активации"']}),`
 `,n.jsx(e.p,{children:n.jsx(e.a,{href:"#top",children:"В начало"})})]})}function Xy(a={}){const{wrapper:e}=a.components||{};return e?n.jsx(e,{...a,children:n.jsx(ox,{...a})}):ox(a)}function fx(a){const e={a:"a",br:"br",em:"em",h1:"h1",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...a.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{id:"классы-персонажей",children:"Классы персонажей"}),`
 `,n.jsxs("details",{children:[n.jsxs("summary",{children:[" ",n.jsx(e.strong,{children:"Оглавление"})," "]}),n.jsx(n.Fragment,{children:n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:n.jsx(e.a,{href:"#%D0%B4%D0%B4--%D0%B4%D0%B0%D0%BC%D0%B0%D0%B3-%D0%B4%D0%B8%D0%BB%D0%B5%D1%80--%D0%B8%D1%81%D1%82%D1%80%D0%B5%D0%B1%D0%B8%D1%82%D0%B5%D0%BB%D1%8C",children:"ДД / Дамаг-дилер / Истребитель"})}),`
@@ -728,7 +730,7 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
 то в конце недели вы обязаны предоставить отчёт о проделанной работе.`,n.jsx(e.br,{}),`
 `,n.jsx(e.strong,{children:"День отчётности можете выбрать сами."}),n.jsx(e.br,{}),`
 `,"Также требуется ",n.jsx(e.strong,{children:"моментальная"})," отчётность об одобрении персонажей и выданных варнах/мутах."]}),`
-`,n.jsx(e.li,{children:"В случае рецидивов (повторных нарушений) правил игроками, администраторы и модераторы могут продлить наказание на своё усмотрение, вплоть до х3 от предыдущего срока."}),`
+`,n.jsx(e.li,{children:"В случае рецидивов (повторных нарушений) правил игроками, администраторы и модераторы могут усугубить наказание на своё усмотрение."}),`
 `]}),`
 `,n.jsx(e.hr,{}),`
 `,n.jsx("blockquote",{className:"td-quote",children:n.jsx(e.del,{children:"Вы думали что здесь будет пасхалка, но это был я, Дио!"})})]})}function Zy(a={}){const{wrapper:e}=a.components||{};return e?n.jsx(e,{...a,children:n.jsx(jx,{...a})}):jx(a)}function gx(a){const e={a:"a",blockquote:"blockquote",br:"br",em:"em",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...a.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{id:"магазины",children:"Магазины"}),`
