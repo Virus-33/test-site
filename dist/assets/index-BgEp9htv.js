@@ -118,27 +118,29 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
 `]}),`
 `,n.jsx(e.h3,{id:"общее",children:n.jsx(e.strong,{children:"Общее"})}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.1)"})," У любой активной и ультимативной способности есть КД.",n.jsx(e.br,{}),`
-`,n.jsx(e.em,{children:"Его минимальное значение — 2 хода."})]}),`
+`,n.jsx(e.em,{children:"Его минимальное значение — 2 раунда."})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.2)"})," Ультимативная способность может быть использована только через 3 раунда."]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.3)"}),` Способности, числовые показатели которых\r
 зависят от характеристик персонажа `,n.jsx(e.strong,{children:"запрещены"}),"."]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.4)"})," Блок и уворот в карточке персонажа не могут быть больше, чем 25%.",n.jsx(e.br,{}),`
 `,"При экипировке предметов, дающих блок/уворот, сумма показателя в карточке и от предмета не может быть больше, чем 50%"]}),`
-`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.5)"})," Персонажи-небафферы могут увеличивать характеристики максимум на 1000 единиц.",n.jsx(e.br,{}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.5)"})," Персонажи-небафферы могут увеличивать характеристики баффами максимум на 1000 единиц.",n.jsx(e.br,{}),`
 `,n.jsx(e.em,{children:"Исключение — универсалы."})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.6)"})," Полное излечение и воскрешение — привилегии класса Хиллер, ровно как и восстановление щита.",n.jsx(e.br,{}),`
-`,"Для остальных классов (кроме Универсала и Псайкера), лечения/регенерация не могут превышать ",n.jsx(e.strong,{children:"1000/ход."})]}),`
+`,"Для остальных классов (кроме Универсала), лечения/регенерация не могут превышать ",n.jsx(e.strong,{children:"1000/ход."})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.7)"})," Способность с чистым уроном может быть всего одна у персонажа и её значение не может превышать ",n.jsx(e.strong,{children:"4000"}),".",n.jsx(e.br,{}),`
 `,"В случае массовой атаки, чистый урон не может превышать ",n.jsx(e.strong,{children:"2000/цель"}),".",n.jsx(e.br,{}),`
 `,n.jsx(e.em,{children:"Чистый урон игнорирует блок."})]}),`
-`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.8)"})," Максимальный суммарный урон от массовой атаки составляет ",n.jsx(e.strong,{children:"80000"}),"."]}),`
-`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.9)"})," Каждый персонаж любого класса имеет ",n.jsx(e.strong,{children:"одну"})," ультимативную способность, либо не имеет таковой вовсе."]}),`
-`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.10)"})," При смерти вашего персонажа кулдаун на его способностях происходит таким же образом, как и всегда."]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.8)"})," Максимальный суммарный урон от массовой атаки составляет ",n.jsx(e.strong,{children:"80.000"}),"."]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.9)"})," Каждый персонаж любого класса имеет ",n.jsx(e.strong,{children:"одну"})," ультимативную способность, либо не имеет таковой вовсе.",n.jsx(e.br,{}),`
+`,"Её максимальный урон - ",n.jsx(e.strong,{children:"8000"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.10)"})," Откат способностей, у которых прописано ",n.jsx(e.em,{children:"ограниченное число действий за бой"}),", ",n.jsx(e.strong,{children:"запрещён"}),"."]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.1.11)"})," При смерти вашего персонажа кулдаун на его способностях происходит таким же образом, как и всегда."]}),`
 `,n.jsx(e.p,{children:n.jsx(e.a,{href:"#top",children:"В начало"})}),`
 `,n.jsx(e.h3,{id:"эффекты-и-статусы",children:n.jsx(e.strong,{children:"Эффекты и статусы"})}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.2.1)"})," Максимальное время эффектов персонажа — ",n.jsx(e.strong,{children:"6"})," раундов для бафферов, ",n.jsx(e.strong,{children:"4"})," для остальных."]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.2.2)"})," Максимальный относительный множитель характеристик для бафферов — ",n.jsx(e.strong,{children:"2X"}),`, а максимальная\r
-плоская прибавка может составлять `,n.jsx(e.strong,{children:"6000"})," единиц."]}),`
+плоская прибавка может составлять `,n.jsx(e.strong,{children:"5000"})," единиц."]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.2.3)"})," Однотипные баффы не суммируются.",n.jsx(e.br,{}),`
 `,n.jsx(e.em,{children:"Более сильный заменяет более слабый."})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.2.4)"})," Персонаж при смерти теряет ",n.jsx(e.strong,{children:"все"})," полученные и наложенные им эффекты и статусы.",n.jsx(e.br,{}),`
@@ -158,10 +160,10 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.3.2)"})," Призванные от ультимативной способности существа имеют:"]}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"18.000"})," суммарных характеристик и ",n.jsx(e.strong,{children:"5"})," способностей, если существо одно.",n.jsx(e.br,{}),`
-`,n.jsx(e.strong,{children:"15.000"})," суммарных характеристик и ",n.jsx(e.strong,{children:"3"})," способности, если существ несколько."]}),`
+`,n.jsx(e.strong,{children:"15.000"})," суммарных характеристик и ",n.jsx(e.strong,{children:"2"})," способности, если существ несколько."]}),`
 `]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.3.3)"}),` Призванные существа типа «Стена» не могут ходить и не имеют способностей, но их\r
-ограничение по статам составляет `,n.jsx(e.strong,{children:"20.000"}),n.jsx(e.br,{}),`
+ограничение по статам составляет `,n.jsx(e.strong,{children:"15.000"}),n.jsx(e.br,{}),`
 `,n.jsxs(e.em,{children:["Имеют вечную провокацию с момента призыва",n.jsx(e.br,{}),`
 `,"Не имеет щита и атаки, не может получать сторонние эффекты",n.jsx(e.br,{}),`
 `,"Призывающий может давать стенам некоторые свойства при призыве, они должны быть указаны внутри призывающей способности"]})]}),`
@@ -1732,5 +1734,5 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
 `,"В дальнейшем они будут получать прирост только от предметов."]}),`
 `,n.jsx(e.p,{children:"Если вы хотите сделать какую-то часть персонажа сильнее, то не забудьте ослабить в равной степени другую его часть."}),`
 `,n.jsxs(e.p,{children:["Старайтесь не примешивать в персонажа то, что принадлежит другому классу.",n.jsx(e.br,{}),`
-`,"Сосредоточтесь на сильных сторонах его класса"]}),`
+`,"Сосредоточьтесь на сильных сторонах его класса"]}),`
 `,n.jsx(e.p,{children:n.jsx(e.a,{href:"#top",children:"В начало"})})]})}function tm(a={}){const{wrapper:e}=a.components||{};return e?n.jsx(e,{...a,children:n.jsx(Sx,{...a})}):Sx(a)}function nm(){const{rule:a}=mD(),d=[{link:"overall",component:n.jsx(Yy,{}),title:"Т&Б - Правила игры",desc:"Общие правила проекта, касающиеся эффектов, ловушек, и боёв"},{link:"glossary",component:n.jsx(Xy,{}),title:"Глоссарий",desc:"Сборник внутриигровых определний и понятий проекта Т&Б"},{link:"resources",component:n.jsx(em,{}),title:"Ресурсы",desc:"Внутриигровые ресурсы проекта Т&Б"},{link:"classes",component:n.jsx(Gy,{}),title:"Т&Б - Классы персонажей",desc:"Классы персонажей проекта Т&Б, их характеристики, возможности и ограничения"},{link:"ranks",component:n.jsx(Qy,{}),title:"Ранги персонажей",desc:"Ранги персонажей в проекте Т&Б, сколько их, за что можно получить и что они определяют"},{link:"chat-rules",component:n.jsx(Zy,{}),title:"Правила общения",desc:"Правила общения в проекте Т&Б, какие вещи надо говорить и за какие можно получить наказание, и какое наказание за какое нарушение"},{link:"shops",component:n.jsx(Vy,{}),title:"Магазины",desc:"Правила для магазинов в проекте Т&Б - как создать, что можно продавать, сколько игровой валюты можно за это получить"},{link:"items",component:n.jsx(Ky,{}),title:"Правила для предметов",desc:"Правила для предметов в проекте Т&Б, сколько характеристик дают, какие редкости и какая между ними разница"},{link:"bazaar",component:n.jsx(ky,{}),title:"Т&Б - Рынок",desc:"Правила для рынка Т&Б, что можно продавать NPC и по каким ценам, как выкупить проданное обратно"},{link:"events",component:n.jsx(Jy,{}),title:"Рейды и данжи",desc:"Руководство по событиям в Т&Б, что такое рейд и данж и как они отличаются, какие у них есть теги и что они значат"},{link:"brewing",component:n.jsx(Fy,{}),title:"Т&Б - Зельеварение",desc:"Руководство к зельеварению проекта Т&Б, как варить зелья и из чего, что можно таким образом получить"},{link:"transmutation",component:n.jsx($y,{}),title:"Т&Б - Трансмутация",desc:"Руководство к трансмутации в проекте Т&Б, как можно усилить свои предметы и за счёт чего"},{link:"start",component:n.jsx(Py,{}),title:"Вводный курс по проекту",desc:"Руководство новичка для вливания в Т&Б, как обстоят вопросы с персонажами, событиями, алхимией, отыгрышем и прочим"},{link:"pvp",component:n.jsx(Iy,{}),title:"Т&Б - Кодекс чести",desc:"Правила для пвп в проекте Т&Б, изменения касающиеся длительности эффектов и условия получения наград в сражениях против других игроков"},{link:"characters",component:n.jsx(tm,{}),title:"О персонажах",desc:"Информация о персонажах в проекте Т&Б и рекомендации к ним"}].find(o=>o.link===a),h=ye().isMobile?"container-mobile":"container";return w.useEffect(()=>{window.scrollTo(0,0)},[]),document.title=d.title,document.getElementById("desc").content=d.desc,n.jsx(n.Fragment,{children:d==null?n.jsx(Wx,{}):n.jsxs(n.Fragment,{children:[n.jsx(Vi,{}),n.jsx("div",{id:h,children:n.jsx("div",{className:"article",children:n.jsx(Hy,{children:d.component})})})]})})}function lm(){return n.jsxs(n.Fragment,{children:[n.jsx(Vi,{}),n.jsxs("div",{className:ye().about,children:["Наша группа в вк - ",n.jsx("a",{href:"https://vk.com/topbossfights",children:"https://vk.com/topbossfights"}),n.jsx("br",{}),"Наш телеграмм - ",n.jsx("a",{children:"Потом ссылку вставлю"}),n.jsx("br",{}),"Этот сайт - ",n.jsx(pl,{to:"/",children:"https://tbdocs.netlify.app"})]})]})}const rm=cy([{path:"/",element:n.jsx(wy,{})},{path:"/about",element:n.jsx(Ny,{})},{path:"/rules",element:n.jsx(Ly,{})},{path:"/rule/:rule",element:n.jsx(nm,{})},{path:"/links",element:n.jsx(lm,{})},{path:"*",element:n.jsx(Wx,{})}]);fg.createRoot(document.getElementById("root")).render(n.jsx(w.StrictMode,{children:n.jsx(vy,{router:rm})}));
