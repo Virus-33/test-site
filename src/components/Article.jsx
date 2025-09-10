@@ -48,25 +48,26 @@ function Article() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
+
+    if (content === undefined) {
+        return (
+            <NotFoundPage/>
+        )
+    }
     
     document.title = content.title;
     document.getElementById('desc').content = content.desc;
     
     return (
         <>
-            {content == undefined ?
-                <NotFoundPage/> :
-                <>
-                    <Topbar/>
-                    <div id={con_id}>
-                        <div className={'article'}>
-                            <MDXProvider>
-                                {content.component}
-                            </MDXProvider>
-                        </div>
-                    </div>
-                </>
-            }
+          <Topbar/>
+          <div id={con_id}>
+              <div className={'article'}>
+                  <MDXProvider>
+                      {content.component}
+                  </MDXProvider>
+              </div>
+          </div>
         </>
     )
 }

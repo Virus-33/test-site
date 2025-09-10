@@ -1,5 +1,5 @@
 import './Carousel.css'
-import {useDeviceDetect} from "../global_vars.jsx";
+import {useDeviceDetect} from "../../global_vars.jsx";
 import {useEffect, useState} from "react";
 
 function Carousel(props) {

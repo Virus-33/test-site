@@ -4,6 +4,7 @@ import { rar_common,
     rar_epic,
     rar_myth,
     rar_leg } from '../../../global_vars.jsx';
+import ColorStr from "../../../components/embeded/ColorStr.jsx";
 
 
 # Ранги персонажей
@@ -57,11 +58,11 @@ import { rar_common,
 
 **_[Вы начинаете на ранге E]_**  
 **D** ранг требует 5 очков  
-<span style={{color:rar_rare}}>**C**</span> - 12  
-<span style={{color:rar_vrare}}>**B**</span> - 24  
-<span style={{color:rar_epic}}>**A**</span> - 40  
-<span style={{color:rar_myth}}>**S**</span> - 60  
-<span style={{color:rar_leg}}>**P**</span> - 84  
+**<ColorStr text={'C'} color={rar_rare}/>** - 12  
+**<ColorStr text={'B'} color={rar_vrare}/>** - 24  
+**<ColorStr text={'A'} color={rar_epic}/>** - 40  
+**<ColorStr text={'S'} color={rar_myth}/>** - 60  
+**<ColorStr text={'P'} color={rar_leg}/>** - 84  
 
 >При проведении рейда вы получаете очки ранга, равные половине
 > от суммы выданных. Эти очки вы можете распределить между
@@ -86,7 +87,7 @@ import { rar_common,
 
 Таблица с ограничениями показывает, сколько предметов какой редкости на каждом ранге может носить персонаж.  
 Дополнительные привелегии открываются от **общего ранга**, а лимит вещей работает в зависимости от **ранга персонажа**.  
-Для ранга <span style={{color:rar_leg}}>P</span> существует отдельная таблица для каждого класса
+Для ранга <ColorStr color={rar_leg} text={'P'}/> существует отдельная таблица для каждого класса
 
 ![Табличка с ограничениями. Её зашакалило](/images/ranks.webp)
 <span className={'pic_desc'}>*Табличка с ограничениями. Её зашакалило*</span>
@@ -95,13 +96,13 @@ import { rar_common,
 
 | **Редкость вещи**                                           | **ДД/Танк/Баффер/Хиллер** | **Универсал/Псайкер** | **Призыватель/Траппер** |
 |-------------------------------------------------------------|:-------------------------:|:---------------------:|:-----------------------:|
-| <span style={{color:rar_common}}>**Обычная**</span>          |             3             |           4           |            2            |
-| <span style={{color:rar_rare}}>**Редкая**</span>           |             3             |           3           |            2            |
-| <span style={{color:rar_vrare}}>**Очень Редкая**</span>     |             3             |           3           |            2            |
-| <span style={{color:rar_epic}}>**Эпическая**</span>        |             2             |           2           |            2            |
-| <span style={{color:rar_myth}}>**Мифическая**</span>       |             1             |           1           |            1            |
-| <span style={{color:rar_leg}}>**Легендарная**</span>       |             1             |           1           |            1            |
-| <span style={{color:'#FFFFFF'}}>**Общее количество**</span> |             4             |           3           |            2            |
+| **<ColorStr color={rar_common} text={'Обычная'}/>**          |             3             |           4           |            2            |
+| **<ColorStr color={rar_rare} text={'Редкая'}/>**           |             3             |           3           |            2            |
+| **<ColorStr color={rar_vrare} text={'Очень Редкая'}/>**     |             3             |           3           |            2            |
+| **<ColorStr color={rar_epic} text={'Эпическая'}/>**        |             2             |           2           |            2            |
+| **<ColorStr color={rar_myth} text={'Мифическая'}/>**       |             1             |           1           |            1            |
+| **<ColorStr color={rar_leg} text={'Легендарная'}/>**       |             1             |           1           |            1            |
+| **<ColorStr color={'#FFFFFF'} text={'Общее количество'}/>** |             4             |           3           |            2            |
 
 </div>
 
@@ -111,7 +112,7 @@ import { rar_common,
 
 ## Награды
 
-За достижение <span style={{color:rar_leg}}>P</span> ранга любым вашим персонажем вы получаете:  
+За достижение <ColorStr color={rar_leg} text={'P'}/> ранга любым вашим персонажем вы получаете:  
 • 8 с.к.  
 • 8 ресурсов на выбор до эпической редкости (кроме кубрия)  
 • Классовую вещь и руну
@@ -123,10 +124,10 @@ import { rar_common,
 С каждым рангом вы получаете очко способности, которое можно потратить на получение вашим персонажем одной пассивной или активной способности. Вы не можете получить способностей больше, чем прописано в лимитах класса.
 
 **ДД** и **Призыватель** получает дополнительное очко способностей на ранге D  
-**Все, кроме ДД, Призывателя и Поддержки** получают дополнительное очко на рангах <span style={{color:rar_rare}}>C</span> и <span style={{color:rar_vrare}}>B</span>  
-**Поддержка** получает дополнительное очко на ранге <span style={{color:rar_epic}}>A</span>
+**Все, кроме ДД, Призывателя и Поддержки** получают дополнительное очко на рангах <ColorStr color={rar_rare} text={'C'}/> и <ColorStr color={rar_vrare} text={'B'}/>  
+**Поддержка** получает дополнительное очко на ранге <ColorStr color={rar_epic} text={'A'}/>
 
-При достижении персонажем ранга <span style={{color:rar_myth}}>S</span> он получает ультимативную способность
+При достижении персонажем ранга <ColorStr color={rar_myth} text={'S'}/> он получает ультимативную способность
 
 После ранга A персонаж перестаёт получать очки способностей.
 
@@ -139,9 +140,9 @@ import { rar_common,
 |              Ранг               | Число способностей |
 |:-------------------------------:|:------------------:|
 |                D                |         5          |
-| <span style={{color:rar_rare}}>C</span> |         6          |
-| <span style={{color:rar_vrare}}>B</span> |         7          |
-| <span style={{color:rar_epic}}>A</span> |         8          |
+| <ColorStr color={rar_rare} text={'C'}/> |         6          |
+| <ColorStr color={rar_vrare} text={'B'}/> |         7          |
+| <ColorStr color={rar_epic} text={'A'}/> |         8          |
 
 </div>
 </details>
@@ -153,9 +154,9 @@ import { rar_common,
 |              Ранг               | Число способностей |
 |:-------------------------------:|:------------------:|
 |                D                |         3          |
-| <span style={{color:rar_rare}}>C</span> |         4          |
-| <span style={{color:rar_vrare}}>B</span> |         5          |
-| <span style={{color:rar_epic}}>A</span> |         7          |
+| <ColorStr color={rar_rare} text={'C'}/> |         4          |
+| <ColorStr color={rar_vrare} text={'B'}/> |         5          |
+| <ColorStr color={rar_epic} text={'A'}/> |         7          |
 
 </div>
 </details>
@@ -167,9 +168,9 @@ import { rar_common,
 |              Ранг               | Число способностей |
 |:-------------------------------:|:------------------:|
 |                D                |         4          |
-| <span style={{color:rar_rare}}>C</span> |         6          |
-| <span style={{color:rar_vrare}}>B</span> |         8          |
-| <span style={{color:rar_epic}}>A</span> |         9          |
+| <ColorStr color={rar_rare} text={'C'}/> |         6          |
+| <ColorStr color={rar_vrare} text={'B'}/> |         8          |
+| <ColorStr color={rar_epic} text={'A'}/> |         9          |
 
 </div>
 </details>
@@ -179,7 +180,7 @@ import { rar_common,
 ## Престиж
 
 Некоторые вещи недоступны с самого начала, например, **_престиж-классы_**.  
-Как только любой ваш персонаж достигает ранга <span style={{color:rar_leg}}>P</span>, вы можете сбросить его до <span style={{color:rar_common}}>E</span>. Это действие сопровождается **наградами престижа**:  
+Как только любой ваш персонаж достигает ранга <ColorStr color={rar_leg} text={'P'}/>, вы можете сбросить его до <ColorStr color={rar_common} text={'E'}/>. Это действие сопровождается **наградами престижа**:  
 •  
 •  
 • Разблокировка **одного** _престиж-класса_ на выбор
