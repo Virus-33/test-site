@@ -210,6 +210,7 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.4.8.4)"})," Максимальный шанс срабатывания многоразовой ловушки равен ",n.jsx(e.strong,{children:"70%"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.4.8.5)"})," Многоразовая ловушка не может иметь в себе много эффектов или воздействий и при срабатывании применяет то, что указано в её характеристиках на цель"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.4.8.6)"})," Многоразовая ловушка ",n.jsx(e.strong,{children:"не имеет никаких способностей"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"2.4.9"})," На одноразовые ловушки не работают баффы"]}),`
 `,n.jsx(e.p,{children:n.jsx(e.a,{href:"#top",children:"В начало"})}),`
 `,n.jsx(e.hr,{}),`
 `,n.jsx(e.h3,{id:"прочее",children:n.jsx(e.strong,{children:"Прочее"})}),`
@@ -505,7 +506,6 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
 `,"• Базовый урон способностей с массовым уроном не может превышать ",n.jsx(e.strong,{children:"3.000"})," единиц на цель",n.jsx(e.br,{}),`
 `,"• Базовое лечение может достигать ",n.jsx(e.strong,{children:"2.500"})," единиц для здоровья или ",n.jsx(e.strong,{children:"1.500"})," для щита",n.jsx(e.br,{}),`
 `,"• Базовая сила баффов/дебаффов составляет ",n.jsx(e.strong,{children:"3.000"})," единиц"]}),`
-`,n.jsx(e.p,{children:"У универсала может быть одна способность, имеющая ловушки, которые также как и у трапперов будут игнорировать уворот и невидимость."}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"Стартовое количество способностей:"})," 3 (любые комбинации)"]}),`
 `,n.jsx(e.p,{children:n.jsx(e.a,{href:"#top",children:"В начало"})}),`
 `,n.jsx(e.hr,{}),`
@@ -573,9 +573,9 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:["Пример: смешаны дд, поддержка и хиллер.",n.jsx(e.br,{}),`
 `,"В таком случае у итогового персонажа будет:",n.jsx(e.br,{}),`
-`,n.jsx(e.strong,{children:"Пассивные способности"}),` 2 штуки ((2+2+3)/3 = 2.3)\r
-`,n.jsx(e.strong,{children:"Активные способности"}),` 6 штук ((5+6+6)/3 = 5.6)\r
-Из них 2 способности от класса хиллер, 2 от дд и ещё 2 от поддержки`]}),`
+`,n.jsx(e.strong,{children:"Пассивные способности"})," 2 штуки ((2+2+3)/3 = 2.3)",n.jsx(e.br,{}),`
+`,n.jsx(e.strong,{children:"Активные способности"})," 6 штук ((5+6+6)/3 = 5.6)",n.jsx(e.br,{}),`
+`,"Из них 2 способности от класса хиллер, 2 от дд и ещё 2 от поддержки"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"Пассивные способности могут в равной степени взывать к любому из используемых при создании такого персонажа классов"}),`
 `,n.jsxs(e.p,{children:["Мультиклассирование недоступно для типа персонажа ",n.jsx(e.strong,{children:"Псайкер"})," и для класса ",n.jsx(e.strong,{children:"Универсал"})]})]})}function Qy(a={}){const{wrapper:e}=a.components||{};return e?n.jsx(e,{...a,children:n.jsx(xx,{...a})}):xx(a)}function we(a){return n.jsx("span",{style:{color:a.color},children:a.text})}function jx(a){const e={a:"a",blockquote:"blockquote",br:"br",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",img:"img",li:"li",ol:"ol",p:"p",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...a.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{id:"ранги-персонажей",children:"Ранги персонажей"}),`
