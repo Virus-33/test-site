@@ -14,8 +14,6 @@
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@mdx-js/rollup": "^3.1.0",
-    "@table-library/react-table-library": "^4.1.15",
-    "astro": "^5.9.4",
     "frontmatter": "^0.0.3",
     "marked": "^15.0.12",
     "react": "^19.1.0",
