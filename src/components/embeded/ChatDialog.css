@@ -1,0 +1,454 @@
+/* ── Рамка-контейнер ────────────────────────────────────── */
+
+.chat-dialog-frame {
+    position: relative;
+    margin: 2rem auto;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(
+        145deg,
+        rgba(29, 29, 29, 0.92),
+        rgba(38, 38, 42, 0.86),
+        rgba(29, 29, 29, 0.92)
+    );
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.chat-dialog-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.14),
+        rgba(255, 255, 255, 0.03),
+        rgba(255, 255, 255, 0.10)
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ── Шапка ───────────────────────────────────────────────── */
+
+.chat-dialog-header {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    position: relative;
+    z-index: 2;
+}
+
+.chat-dialog-title {
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+/* ── Тело ────────────────────────────────────────────────── */
+
+.chat-dialog-body {
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+/* ── Скроллируемое тело ──────────────────────────────────── */
+
+.chat-dialog-scrollable {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/* Тонкий скроллбар */
+.chat-dialog-scrollable::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chat-dialog-scrollable::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chat-dialog-scrollable::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+}
+
+.chat-dialog-scrollable::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.chat-dialog-scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
+}
+
+/* ── Градиенты-тени для индикации скролла ────────────────── */
+
+.chat-scroll-fade-top,
+.chat-scroll-fade-bottom {
+    position: absolute;
+    left: 0;
+    right: 5px; /* не перекрывать скроллбар */
+    height: 2.5rem;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.chat-scroll-fade-top {
+    top: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(29, 29, 29, 0.95),
+        transparent
+    );
+}
+
+/* Если есть header — сдвигаем тень под него */
+.chat-dialog-header ~ .chat-dialog-body ~ .chat-scroll-fade-top {
+    top: 2.2rem;
+}
+
+.chat-scroll-fade-bottom {
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgba(29, 29, 29, 0.95),
+        transparent
+    );
+}
+
+/* Показ теней через JS-классы */
+.chat-dialog-frame.has-scroll-top .chat-scroll-fade-top {
+    opacity: 1;
+}
+
+.chat-dialog-frame.has-scroll-bottom .chat-scroll-fade-bottom {
+    opacity: 1;
+}
+
+/* ── Сообщение ───────────────────────────────────────────── */
+
+.chat-msg {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.chat-msg-left  { justify-content: flex-start; }
+.chat-msg-right { justify-content: flex-end;   }
+
+.chat-msg-continued {
+    margin-top: -0.3rem;
+}
+
+/* ── Аватар ──────────────────────────────────────────────── */
+
+.chat-avatar {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.chat-avatar-placeholder {
+    width: 34px;
+    min-width: 34px;
+    flex-shrink: 0;
+}
+
+/* ── Цветной аватар ──────────────────────────────────────── */
+
+.chat-avatar-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.chat-avatar-initial {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: 1;
+}
+
+/* ── Пузырь ──────────────────────────────────────────────── */
+
+.chat-bubble {
+    max-width: 78%;
+    padding: 0.45rem 0.7rem 0.35rem;
+    border-radius: 14px;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.chat-bubble-left  { border-bottom-left-radius: 4px;  }
+.chat-bubble-right { border-bottom-right-radius: 4px; }
+
+.chat-bubble-continued.chat-bubble-left {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-bubble-continued.chat-bubble-right {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* ── Бот-пузырь ──────────────────────────────────────────── */
+
+.chat-bubble-bot {
+    border-left: 3px solid transparent;
+}
+
+/* ── Имя ─────────────────────────────────────────────────── */
+
+.chat-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+    line-height: 1.2;
+}
+
+.chat-name-row {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.1rem;
+}
+
+/* ── Бейдж бота ──────────────────────────────────────────── */
+
+.chat-bot-badge {
+    font-size: 0.55rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.08rem 0.35rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+/* ── Текст ───────────────────────────────────────────────── */
+
+.chat-text {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.chat-bubble p {
+    margin: 0 !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* ── Время ───────────────────────────────────────────────── */
+
+.chat-time {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.35);
+    float: right;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+    line-height: 1;
+    position: relative;
+    top: 0.15rem;
+}
+
+/* ── Embed ───────────────────────────────────────────────── */
+
+.chat-embed {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 0.4rem;
+    padding: 0.6rem 0.8rem;
+    border-left: 4px solid #5865f2;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+}
+
+.chat-embed-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.chat-embed-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.chat-embed-title a {
+    color: #00aff4 !important;
+    text-decoration: none !important;
+}
+
+.chat-embed-title a:hover {
+    text-decoration: underline !important;
+}
+
+.chat-embed-desc {
+    font-size: 0.82rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.chat-embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    margin-top: 0.2rem;
+}
+
+.chat-embed-field {
+    flex: 0 0 100%;
+}
+
+.chat-embed-field-inline {
+    flex: 1 1 30%;
+    min-width: 5rem;
+}
+
+.chat-embed-field-name {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.1rem;
+}
+
+.chat-embed-field-value {
+    font-size: 0.82rem;
+    color: #aaa;
+    line-height: 1.3;
+}
+
+.chat-embed-image {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-top: 0.3rem;
+}
+
+.chat-embed-thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+.chat-embed-footer {
+    font-size: 0.68rem;
+    color: #888;
+    margin-top: 0.2rem;
+    line-height: 1.3;
+}
+
+/* ── Системное сообщение ─────────────────────────────────── */
+
+.chat-system {
+    text-align: center;
+    padding: 0.3rem 0;
+}
+
+.chat-system span {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.38);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.2rem 0.8rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* ── Разделитель ─────────────────────────────────────────── */
+
+.chat-divider {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.4rem 0;
+}
+
+.chat-divider-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.chat-divider-label {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+}
+
+/* ── Мобильная адаптация ─────────────────────────────────── */
+
+@media (max-width: 600px) {
+    .chat-dialog-frame {
+        margin: 1rem 0;
+        max-width: 100% !important;
+        border-radius: 12px;
+    }
+
+    .chat-bubble {
+        max-width: 85%;
+    }
+
+    .chat-avatar {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+    }
+
+    .chat-avatar-placeholder {
+        width: 28px;
+        min-width: 28px;
+    }
+
+    .chat-avatar-initial {
+        font-size: 0.68rem;
+    }
+
+    .chat-embed-thumb {
+        width: 48px;
+        height: 48px;
+    }
+
+    .chat-scroll-fade-top,
+    .chat-scroll-fade-bottom {
+        height: 1.8rem;
+    }
+}
